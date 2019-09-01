@@ -1,7 +1,7 @@
 {
   "name": "huddle",
   "version": "1.0.0",
-  "description": "trillo challenge",
+  "description": "huddle challenge",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
