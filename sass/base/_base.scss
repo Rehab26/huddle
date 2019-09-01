@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+
+    @include respond(pb-largest){
+        font-size: 60%;
+    }
+    @include respond(bp-smallest){
+        font-size: 52%;
+    }
+}
+
+body {
+    box-sizing:border-box;
+    background-color: white;
+}
+
+::selection {
+    background-color: $primary-color;
+    color: #fff;
+}

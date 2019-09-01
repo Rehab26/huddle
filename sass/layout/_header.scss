@@ -1,0 +1,63 @@
+.header {
+    background-image:url(../img/bg-hero-desktop.svg);
+    background-color:$secondary-color-light;
+    background-size: cover;
+    padding: 4rem;
+    position: relative;
+    @include respond(bp-smalle-2){
+        padding: 4rem 1rem;
+    }
+}
+
+.top-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        height: 2rem;
+        @include respond(bp-smallest){
+            height: 1.4rem;
+        }
+    }
+}
+
+.hero-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem auto;
+    padding: 3rem;
+    @include respond(bp-small){
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem auto;
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+    &__left {
+        flex: 1;
+        align-self: center;
+        @include respond(bp-small){
+            align-content: center;
+            flex: 0;
+        }
+    }
+    &__right {
+        display: inline-block;
+    }
+
+    &__img {
+        height:40rem;
+        @include respond(pb-largest){
+            height: 40rem;
+        }
+        @include respond(bp-large){
+            height: 35rem;
+        }
+        @include respond(bp-medium){
+            height: 27rem;
+        }
+        @include respond(bp-small){
+            margin-top: 4rem;
+        }
+    }
+}

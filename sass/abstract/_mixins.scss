@@ -1,0 +1,31 @@
+@mixin respond($bpoint){
+    @if $bpoint == pb-largest {
+        @media only screen and (max-width:75em)
+            {@content};
+    }
+    @if $bpoint == bp-large {
+        @media only screen and (max-width:68.75em)
+            {@content};
+    }
+    @if $bpoint == bp-between {
+            @media only screen and (max-width:65.625em)
+                {@content};
+    }
+    @if $bpoint == bp-medium {
+        @media only screen and (max-width:59.375em)
+            {@content};
+    }
+    @if $bpoint == bp-small {
+        @media only screen and (max-width:53.125em)
+            {@content};
+    }
+    @if $bpoint == bp-smalle-2 {
+        @media only screen and (max-width:48.875em)
+            {@content};
+    }
+    @if $bpoint == bp-smallest {
+        @media only screen and (max-width:26.75em)
+            {@content};
+    }
+}
+

@@ -1,0 +1,53 @@
+.btn {
+    &:link,
+    &:visited{
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: inline-block;
+        border-radius: 10rem;
+        box-shadow: 2rem 0 4rem rgba(0,0,0,0.15);
+        text-transform: capitalize;
+    }
+}
+
+.btn-white {
+    &:link,
+    &:visited{
+        padding: 1rem 5rem;
+        color: $secondary-color-dark;
+        background-color: #fff;
+        transition: all .3s;
+        @include respond(bp-smalle-2){
+            padding: 1rem 2rem;
+        }
+    }
+
+    &:hover {
+        background-color: $primary-color;
+        color:#fff;
+    }
+    &:focus {
+        animation: onTop 1s infinite;
+    }
+}
+
+.btn-pink {
+    &:link,
+    &:visited{
+        box-shadow: 2rem 3rem 4rem rgba(0,0,0,0.15);
+        padding: 1rem 2rem;
+        text-align: center;
+        color: #fff;
+        background-color: $primary-color;
+        transition: all .3s;
+    }
+
+    &:hover {
+        background-color:$VeryPaleCyan;
+        color:$secondary-color-dark;
+    }
+    &:focus {
+        animation: onTop 1s infinite;
+    }
+}

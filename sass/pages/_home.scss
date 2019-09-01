@@ -1,0 +1,190 @@
+.container {
+    background-color: #fff;
+    padding: 10rem;
+    position: relative;
+    @include respond(bp-smalle-2){
+        padding: 8rem 2rem;
+    }
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 4rem rgba(0,0,0,0.15);
+    border: 1px solid #f3f0f0;
+    margin-bottom: 4rem;
+
+    @include respond(bp-smalle-2){
+        flex-direction: column;
+        text-align: center;
+        padding: 5rem 3rem;
+    }
+
+}
+
+.text-box {
+    flex:0 0 40%;
+    align-self: center;
+    padding: 3rem;
+    @include respond(bp-small){
+        flex: 1;
+    }
+    @include respond(bp-small-2){
+        order: 1;
+    }
+}
+
+.img-box {
+    align-self: center;
+    &__img {
+        height: 30rem;
+        @include respond(bp-small){
+            height: 15rem;
+        }
+    }
+
+    &--2 {
+        order: -1;
+    }
+
+}
+
+.ask-section {
+    text-align: center;
+    width: 50%;
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 4rem rgba(0,0,0,0.15);
+    border: 1px solid #f3f0f0;
+    position: absolute;
+    left: 25%;
+    z-index: 1000;
+    @include respond(bp-small){
+        padding: 2rem;
+        bottom: -5%;
+    }
+    @include respond(bp-smalle-2){
+        padding: 1rem;
+        width: 90%;
+        left: 5%;
+    }
+    @include respond(bp-smallest){
+        bottom: -3%;
+    }
+}
+
+.footer {
+    padding: 10rem 2rem 2rem 2rem;
+    background-color: $secondary-color-dark;
+    color: $secondary-color-light;
+    font-size: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(bp-smalle-2){
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+}
+
+.huddle-content {
+    
+    & > * {
+        margin-bottom: 2rem;
+    }
+    &__box {
+        display: inline;
+    }
+    &__img{
+        height:3rem;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        height: 2.4rem;
+        width: 2.4rem;
+        fill: $secondary-color-light;
+        margin-right: .7rem;
+    }
+    &__location-text {
+       width: 30%;
+       @include respond(bp-small){
+           width: 70%;
+           margin: 0;
+       }
+       @include respond(bp-smalle-2){
+           width: 60%;
+       }
+    }
+    &__link {
+        &:visited,
+        &:link {
+            text-decoration: none;
+            color: currentColor;
+        }
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.huddle-list {
+    padding-top: 8rem;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    @include respond(bp-smalle-2){
+        padding-top: 1rem;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include respond(bp-smalle-2){
+            flex-direction: column;
+        }
+    }
+    &__item {
+        flex: 0 0 30%;
+        margin-right: 2rem;
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+    
+}
+
+.huddle-social {
+    padding-top: 8rem;
+    display: flex;
+    @include respond(bp-smalle-2){
+        padding-top: 0;
+    }
+    &__icon--social {
+        height: 2.4rem;
+        width: 2.4rem;
+        fill: $secondary-color-light;
+        cursor: pointer;
+        margin-right: 2rem;
+
+        &:hover {
+            fill: $primary-color;
+        }
+    }
+}
+
+.legal {
+   text-align: right;
+   @include respond(bp-smalle-2){
+       text-align: left;
+       margin-top: 2rem;
+   }
+}
